@@ -9,7 +9,7 @@
 			body {
 				color: #666666;
 				background-color: #f9f8f6;
-				background-image: url("images/Black-Plain-Wallpaper-Collection-720x450.jpg");
+				background-image: url("Black-Plain-Wallpaper-Collection-720x450.jpg");
 				background-position: center;
 				font-family: Georgia, Times, serif;
 				line-height: 1.4em;
