@@ -1,0 +1,272 @@
+html, 
+body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Sofadi One', cursive;
+	margin: auto;
+}
+
+{
+	text-decoration: none;
+	color: #666;
+}
+
+#banner{
+	width: 100%;
+	height: 70%;
+	background: url(img/Black-Plain-Wallpaper-Collection-720x450.jpg);
+	background-attachment: fixed;
+	position: relative;
+}
+
+	#banner #overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(img/overlay.png) 0 100% repeat-x;
+	}
+
+
+	#logo{
+		width: 100%;
+		position: absolute;
+		bottom: 10%;
+		z-index: 5;
+		text-align: center;
+	}
+	#logo img {
+		cursor: pointer;
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+		border: 3px solid rgba(255,255,255,.5);
+		border-radius: 50%;
+	}
+		#logo img:hover{
+			border: 3px solid rgba(255,255,255,.7);
+		}
+	#logo h1{
+		margin: 0 auto;
+		text-align: center;
+		font-family: Death Star;
+		font-size: 120px;
+		color: #eee;
+		text-shadow: 1px 1px 1px #000, 1px 2px 3px #555;
+	}
+
+	#logo #jobdesc{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px auto;
+		color: #eee;
+		font-size: 40px;
+		text-shadow: 1px 1px 1px #000;
+	}
+
+}
+
+
+section{
+	width: 500px;
+	max-width: 500px;
+	margin: 40px auto;
+}
+
+	section span{
+		background: #C09A7F;
+		padding: 4px;
+		border-radius: 0 5px 0 0;
+		color: #eee;
+		font-size: 12px;
+	}
+
+	.section{
+		display: table;
+		width: 100%;
+		margin: auto;
+		background: black;
+	}
+
+		.section .content{
+			display: table-row;
+			width: 100%;
+		}
+		.section .box{
+			display: table-cell;
+			padding: 10px;
+			width:31.3333%;
+		}
+			.section .box:nth-child(1){
+				background: #eee;
+				border: 5px solid black;
+			}
+			.section .box:nth-child(2){
+				border-radius: 0 0 10px 0;
+				background: #eee;
+				border: 5px solid black;
+			}
+			.section .box:nth-child(3){
+				border-radius: 0 0 10px 0;
+				background: #eee;
+				border: 5px solid black;
+			}
+			.section .box:hover{
+				background: #ddd;
+			}
+			.section .box href{
+				padding: 10px;
+				font-size: 35px;
+				font-weight: bold;
+			}
+			.section .box p{
+				padding: 10px;
+				line-height: 1.5em;
+			}
+			.section .box img{
+				width:100%;
+				max-width: 100%;
+				height: auto;
+				border-radius: 5px;
+			}
+
+.Data
+{
+	text-align	: center;
+}
+
+
+body
+{
+	background-image		: url("img/Black-Plain-Wallpaper-Collection-720x450.jpg");
+	background-repeat		: no-repeat;
+	background-size			: cover;
+	background-attachment 	: fixed;
+}
+
+h1
+{
+	font-family	: Death Star;
+	color		: white;
+	font-size	: 50px;
+	margin-left: 20px;
+
+}
+
+h2
+{
+	font-family	: Death Star;
+	color		: white;
+	font-size	: 70px;
+	margin-left: 20px;
+	
+}
+
+
+.menu:link
+{
+	background	: black;
+	color		: white;
+}
+
+.menu:hover
+{
+	background	: white;
+	color		: black;
+}
+
+
+.menu
+{
+	color			: rgb(255,255,255);
+	font-family		: sans-serif;
+	text-align		: center;
+	font-size		: 20px;
+	background		: black;
+	display			: inline-block;
+	width			: 150px;
+	text-decoration	: none;
+	border			: 3px solid black;
+	border-radius	: 10px;
+	padding			: 10px;
+	margin          : 5%; 
+
+}
+
+.menu2
+{
+	color			: rgb(255,255,255);
+	font-family		: sans-serif;
+	text-align		: center;
+	font-size		: 20px;
+	background		: black;
+	display			: inline-block;
+	width			: 700px;
+	text-decoration	: none;
+	border			: 3px solid black;
+	border-radius	: 10px;
+	padding			: 10px;
+	margin          : 5%; 
+
+}
+
+.sectiona .menu1
+{
+	color			: rgb(0,0,0);
+	text-align		: center;
+	font-size		: 15px;
+	background		: white;
+	display			: table-cell;
+	text-decoration	: none;
+	border			: 3px solid black;
+	border-radius	: 10px;
+	padding			: 10px;
+			width:80%;
+
+}
+
+.sectiona{
+		display: table;
+		width: 100%;
+		margin: auto;
+	}
+
+		.sectiona .contenta{
+			display: table-row;
+			width: 100%;
+}
+.gen
+{
+	color			: white;
+	text-align		: center;
+	font-family		: Death Star;
+	font-size		: 50px;
+	background		: black;
+	display			: inline-block;
+	width			: 600px;
+	text-decoration	: none;
+	border			: 3px solid grey;
+	border-radius	: 10px;
+	padding			: 10px;
+}
+
+.genb
+{
+	text-align		: Left;
+	font-family		: Georgia;
+	width: 700px;
+}
+
+.terserah 
+{
+	width : 25%;
+	height: 25%;
+}
+.nengah 
+{
+		position: relative;
+	margin: auto;
+	text-align: center;
+}
