@@ -241,7 +241,7 @@ h2
 {
 	color			: white;
 	text-align		: center;
-	font-family		: Comic Sans MS;
+	font-family		: Comic 'Sans' MS;
 	background		: black;
 	display			: inline-block;
 	width			: 600px;
@@ -254,7 +254,7 @@ h2
 .Legend1
 {
 	text-align		: Left;
-	font-family		: Comic Sans MS;
+	font-family		: Comic 'Sans' MS;
 	width: 700px;
 }
 
