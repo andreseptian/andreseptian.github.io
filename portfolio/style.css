@@ -181,11 +181,11 @@ h2
 	font-family		: sans-serif;
 	text-align		: center;
 	font-size		: 20px;
-	background		: black;
+	background		: white;
 	display			: inline-block;
 	width			: 150px;
 	text-decoration	: none;
-	border			: 3px solid white;
+	border			: 3px solid black;
 	border-radius	: 10px;
 	padding			: 10px;
 	margin          : 5%; 
@@ -198,11 +198,11 @@ h2
 	font-family		: sans-serif;
 	text-align		: center;
 	font-size		: 20px;
-	background		: black;
+	background		: white;
 	display			: inline-block;
 	width			: 700px;
 	text-decoration	: none;
-	border			: 3px solid white;
+	border			: 3px solid black;
 	border-radius	: 10px;
 	padding			: 10px;
 	margin          : 5%; 
