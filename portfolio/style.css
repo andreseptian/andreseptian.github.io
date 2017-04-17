@@ -145,7 +145,7 @@ body
 
 h1
 {
-	font-family	: Death Star;
+	font-family	: "Death Star";
 	color		: white;
 	font-size	: 50px;
 	margin-left: 20px;
@@ -154,7 +154,7 @@ h1
 
 h2
 {
-	font-family	: Death Star;
+	font-family	: "Death Star";
 	color		: white;
 	font-size	: 70px;
 	margin-left: 20px;
@@ -238,7 +238,7 @@ h2
 {
 	color			: white;
 	text-align		: center;
-	font-family		: Death Star;
+	font-family		: "Death Star";
 	font-size		: 50px;
 	background		: black;
 	display			: inline-block;
