@@ -8,363 +8,337 @@
     </head>
     <body>
        <section class="header">
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+        * {
+          font-family: "Montserrat", sans-serif !important;
+        }
 
-            * {
-                font-family: 'Inter', sans-serif !important;
-            }
+        body .header {
+          background: #291586;
+        }
 
-            body .header {
-                background: #08090D;
-            }
+        @media screen and (min-width: 768px) {
+          body .header nav {
+            padding-top: 30px;
+          }
+        }
 
-            body .header .content {
-                padding-top: 80px;
-                padding-bottom: 80px;
-            }
+        body .header nav .navbar-brand {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+          color: #ffffff;
+        }
 
-            body .header .content .headline {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 45px;
-                line-height: 59px;
-                color: #FFFFFF;
-            }
+        body .header nav .navigation li {
+          margin-right: 16px;
+        }
 
-            body .header .content .subheadline {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
+        body .header nav .navigation a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 21px;
+          color: #ffffff !important;
+        }
 
-            body .header .content .button-header {
-                margin-top: 30px;
-            }
+        body .header nav .signup {
+          width: 113px;
+          background: #ffffff;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #08090d !important;
+        }
 
-            body .header .content .button-header .btn-started {
-                background: #0DDB93;
-                border-radius: 8px;
-                width: 150px;
-                height: 50px;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 21px;
-                text-align: center;
-                color: #001D01;
-            }
+        @media screen and (max-width: 768px) {
+          body .header nav .signup {
+            width: 100% !important;
+          }
+        }
 
-            body .header .content .button-header .btn-watch {
-                background: transparent;
-                border-radius: 8px;
-                width: 150px;
-                height: 50px;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 21px;
-                text-align: center;
-                -webkit-text-decoration-line: underline;
-                text-decoration-line: underline;
-                color: #939EA3;
-            }
+        body .header .content {
+          padding-top: 90px;
+        }
 
-            @media screen and (min-width: 768px) {
-                body .header nav {
-                    padding-top: 30px;
-                }
-            }
+        body .header .content .headline {
+          font-family: Montserrat !important;
+          font-weight: bold;
+          font-size: 55px;
+          line-height: 67px;
+          color: #ffffff;
+        }
 
-            body .header nav .navbar-brand {
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 26px;
-                color: #FFFFFF;
-                margin-right: 30px !important;
-            }
+        body .header .content .subheadline {
+          font-family: Montserrat !important;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #ffffff;
+        }
 
-            @media screen and (min-width: 768px) {
-                body .header nav .navigation {
-                    padding-left: 30px;
-                    border-left: 1px solid #304454;
-                }
-            }
+        body .header .content .button-header {
+          margin-top: 50px;
+        }
 
-            body .header nav .navigation li {
-                margin-right: 24px;
-            }
+        body .header .content .button-header .btn-listing {
+          width: 150px;
+          height: 50px;
+          background: #fecf00;
+          border-radius: 8px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 21px;
+          color: #101010;
+        }
 
-            body .header nav .navigation a {
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 21px;
-                color: #FFFFFF !important;
-            }
+        body .header .img-brand {
+          padding-top: 50;
+          padding-bottom: 90px;
+        }
 
-            body .header nav .authentication li {
-                margin-right: 22px;
-            }
+        @media screen and (min-width: 768px) {
+          body .header .img-brand {
+            padding-top: 100px;
+          }
+        }
 
-            body .header nav .authentication a {
-                font-size: 16px;
-            }
-
-            @media screen and (max-width: 768px) {
-                body .header nav .authentication .login {
-                    width: 100%;
-                }
-            }
-
-            body .header nav .authentication .login a {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 21px;
-                color: #FFFFFF;
-            }
-
-            @media screen and (max-width: 768px) {
-                body .header nav .authentication .login a {
-                    background: #518CFF;
-                    border-radius: 8px;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    color: #FFFFFF !important;
-                    padding: 14px 14px 14px 14px !important;
-                }
-            }
-
-            body .header nav .authentication .signup {
-                background: #FFFFFF;
-                border-radius: 8px;
-                width: 113px;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                padding: 14px 14px 14px 14px !important;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 21px;
-                text-align: center;
-                color: #08090D;
-            }
-        </style>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container px-0">
-                <a class="navbar-brand mr-0" href="#">
-                    kodechamp.
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto navigation">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Showcase</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Tools</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto authentication">
-                        <li class="nav-item my-auto text-center login">
-                            <a class="nav-link mb-3 mb-md-0" aria-current="page" href="#">Sign in</a>
-                        </li>
-                        <li class="nav-item mr-0 text-center">
-                            <a class="nav-link signup" href="#">
-                                Sign up
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container px-md-5">
-            <div class="row content">
-                <div class="col-md-5 my-auto">
-                    <div class="headline">
-                        Learn Code From <br class="d-none d-md-block">
-                        The Expert.
-                    </div>
-                    <div class="subheadline mt-4">
-                        No more wasting time from browsing around <br class="d-none d-md-block">
-                        just follow our best guidance in 2022
-                    </div>
-                    <div class="button-header">
-                        <button class="btn btn-started">Get Started</button>
-                        <button class="btn btn-watch">Watch Stories</button>
-                    </div>
-                </div>
-                <div class="col-md-7 mt-5 mt-md-0">
-                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-kodechamp/kodechamp-header.png"
-                        alt="header" class="img-fluid">
-                </div>
-            </div>
+        @media screen and (min-width: 768px) {
+          body .header .img-brand .mr-60 {
+            margin-right: 60px;
+          }
+        }
+      </style>
+      <nav
+        class="container  navbar navbar-dark navbar-expand-md bg-faded justify-content-center px-md-0"
+      >
+        <a class="mr-auto navbar-brand d-flex w-50" href="#"> Shayna </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse w-100 navigation"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Media</a>
+            </li>
+          </ul>
+          <ul class="ml-auto nav navbar-nav w-100 justify-content-end">
+            <li class="mr-4 text-center nav-item">
+              <a
+                class="nav-link sign"
+                href="#"
+                style="color: #ebf1fc !important"
+              >
+                Sign in
+              </a>
+            </li>
+            <li class="my-auto mr-0 text-center nav-item">
+              <a
+                class="nav-link signup"
+                href="#"
+                style="color: #08090d !important"
+              >
+                Sign Up
+              </a>
+            </li>
+          </ul>
         </div>
-    </section><!-- START: PRODUCTS -->
-  <section class="products position-relative overflow-hidden">
+      </nav>
+      <div class="container text-center">
+        <div class="row content">
+          <div class="col-12">
+            <div class="headline">
+              Build Your Company <br class="d-none d-md-block" />
+              From Scratch
+            </div>
+            <div class="mt-3 subheadline">
+              Learn well from big companies with our best framework
+            </div>
+            <div class="button-header">
+              <button class="btn btn-listing">Listing Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 img-brand">
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-Startup/Group_1.png"
+              alt="Shayna"
+              class="px-4 mt-5 img-fluid mr-60 mt-md-0 px-md-0"
+            />
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-Startup/Group_2.png"
+              alt="Shayna"
+              class="px-4 mt-5 img-fluid mr-60 mt-md-0 px-md-0"
+            />
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-Startup/Group_3.png"
+              alt="Shayna"
+              class="px-5 mt-5 img-fluid mr-60 mt-md-0 px-md-0"
+            />
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-Startup/Group_4.png"
+              alt="Shayna"
+              class="px-4 mt-5 img-fluid mr-60 mt-md-0 px-md-0"
+            />
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-Startup/Group_5.png"
+              alt="Shayna"
+              class="px-4 mt-5 img-fluid mt-md-0 px-md-0"
+            />
+          </div>
+        </div>
+      </div>
+    </section><section class="content">
     <style scoped>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
       * {
-        font-family: 'Poppins', 'Inter', sans-serif !important;
+        font-family: 'Poppins', sans-serif !important;
       }
 
-      body .right-circle img {
-        z-index: 0;
-        margin-top: -250px;
-        position: absolute;
+      body .content {
+        background: #FFFFFF;
       }
 
-      body .porto {
-        background-color: #000909;
-        padding: 50px 30px;
+      body .content .content {
+        padding-top: 70px;
+        padding-bottom: 70px;
       }
 
-      @media only screen and (min-width: 768px) {
-        body .porto {
-          padding-top: 140px;
-          padding-bottom: 100px;
-        }
+      body .content .content .tagline {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #3547AC !important;
       }
 
-      body .porto .headline {
-        font-size: 40px;
+      body .content .content .headline {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 67px;
+        color: #111F37;
+      }
+
+      body .content .content .subheadline {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+        color: #627492;
+      }
+
+      body .content .content .button-header {
+        margin-top: 40px;
+      }
+
+      body .content .content .button-header .btn-started {
+        width: 150px;
+        height: 50px;
+        left: 562px;
+        top: 569px;
+        background: #3547AC;
+        border-radius: 8px;
+        font-family: Poppins;
+        font-style: normal;
         font-weight: 600;
-        color: #EEEEEE;
-        z-index: 1;
-      }
-
-      body .porto .link {
-        font-size: 24px;
-        font-weight: 600;
-        color: #EEEEEE;
-        z-index: 1;
-      }
-
-      body .porto .sub-headline {
-        padding-top: 28px;
         font-size: 16px;
-        font-weight: 400;
-        color: #888888;
-        z-index: 1;
+        line-height: 24px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
       }
 
-      @media only screen and (min-width: 768px) {
-        body .porto .sub-headline {
-          font-size: 24px;
-        }
+      body .content .content .img-brand {
+        margin-top: 34px;
       }
 
-      body .porto .porto-img {
-        margin-top: 45px;
-      }
-
-      body .porto .porto-img div {
-        z-index: 1;
-      }
-
-      @media only screen and (min-width: 768px) {
-        body .porto .porto-img {
-          margin-top: 96px;
-        }
-      }
-
-      body .porto .porto-img-full {
-        z-index: 1;
+      body .content .content .img-brand img {
+        margin-right: 60px;
       }
 
       @media only screen and (max-width: 768px) {
-        body .porto .porto-img-full {
-          width: 100px !important;
+        body .content .content .img-brand img {
+          margin-right: 30px;
+          margin-left: 30px;
         }
       }
 
-      body .porto .porto-img-half {
-        z-index: 1;
-      }
-
-      @media only screen and (max-width: 768px) {
-        body .porto .porto-img-half {
-          height: 70px !important;
-        }
-      }
-
-      body .cl-light {
-        color: #EEEEEE;
-      }
-
-      body .cl-light-grey-2 {
-        color: #90BCB7;
-      }
-
-      body .font-lora {
-        font-family: 'Lora', sans-serif !important;
-      }
+      /*# sourceMappingURL=main.css.map */
     </style>
-    <section class="right-circle">
-      <div class="d-flex justify-content-end">
-        <img
-          src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Right-Circle.png"
-          alt="circle" />
-      </div>
-    </section>
-
-    <section class="porto">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-10">
-          <h4 class="headline">
-            Outputs from Our Platform
-          </h4>
+    <div class="container">
+      <div class="row content">
+        <div class="col-md-6  my-auto">
+          <img
+            src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Feature/feature-highlight.svg"
+            alt="header" class="img-fluid">
         </div>
-        <div class="col-md-2 text-md-right">
-          <a href="#" class="link h-100 d-inline-block text-decoration-none">
-            See more
-          </a>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="tagline text-start">
+            GREAT INTEGRATIONS
+          </div>
+          <div class="headline mt-3 text-start">
+            Grow Your Businesses <br class="d-none d-md-block">
+            Faster & Automated
+          </div>
+          <div class="subheadline mt-4">
+            We’ve been working together with many big <br class="d-none d-md-block">
+            companies to help grow your financial
+          </div>
+          <div class="button-header">
+            <button class="btn btn-started">Start Integrate</button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <p class="sub-headline">
-            Our platform specialize on helping our clients work process and communication. <br>
-            Below are the products produced using our platform.
-          </p>
-        </div>
-      </div>
-      <div class="d-flex align-items-center justify-content-center gap-4 porto-img">
-        <div>
-          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/porto-1.png"
-            class="img-fluid" />
-        </div>
-        <div class="d-flex flex-column gap-3">
-          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/porto-2.png"
-            class="img-fluid">
-          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/porto-3.png"
-            class="img-fluid mt-auto" />
-        </div>
-        <div>
-          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/porto-4.png"
-            class="img-fluid" />
+        <div class="col-md-12 img-brand text-center">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-adobe.png"
+            alt="brand" class="img-fluid mt-4 mt-md-3">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-spotify.png"
+            alt="brand" class="img-fluid mt-4 mt-md-3">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-google.png"
+            alt="brand" class="img-fluid mt-4 mt-md-3">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-facebook.png"
+            alt="brand" class="img-fluid mt-4 mt-md-3">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-tesla.png"
+            alt="brand" class="img-fluid me-md-0 mt-4 mt-md-3">
         </div>
       </div>
-    </section>
-  </section>
-  <!-- END: PRODUCTS --><footer class="page-footer font-small blue">
-
+    </div>
+  </section><footer class="page-footer font-small blue">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -375,165 +349,144 @@
         crossorigin="anonymous"></script>
 
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@900&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
 
         * {
-            font-family: 'Poppins', 'Inter', sans-serif !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        body .font-red-hat-display {
+            font-family: 'Red Hat Display', sans-serif !important;
         }
 
         body footer {
-            background: linear-gradient(293.57deg, #114E4E 0%, #052D2D 23.8%, #041111 42.57%, #000909 63.76%, #000909 69.62%);
-            color: #EEEEEE;
-            padding-top: 72px !important;
-            padding-bottom: 36px !important;
+            background: #313E60;
+            padding-top: 50px;
+            padding-bottom: 70px;
         }
 
-        body footer h5 {
-            font-weight: 600 !important;
-            size: 16px !important;
-            line-height: 150%;
-            color: #ECF1F4;
+        body footer .logo {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 38px;
+            color: #FAFAFD;
         }
 
-        body footer .address p {
-            font-weight: 400 !important;
-            size: 16px !important;
-            line-height: 150%;
-            color: #ECF1F4;
+        body footer .social-media {
+            margin-top: 55px;
+        }
+
+        body footer .copyright {
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 135%;
+            color: #FAFAFD;
+            margin-top: 20px;
         }
 
         body footer .nav-footer p {
             font-weight: 700 !important;
-            size: 16px !important;
-            line-height: 150%;
-            color: #ECF1F4;
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-size: 20px;
+            line-height: 135%;
+            color: #FAFAFD;
         }
 
         body footer .nav-footer a {
             font-weight: 400 !important;
-            size: 16px !important;
-            color: #ECF1F4;
+            font-family: 'Red Hat Display', sans-serif !important;
+            font-size: 20px;
+            line-height: 135%;
+            color: #FAFAFD;
         }
 
         body footer li {
-            margin-bottom: 12px;
-        }
-
-        body footer .social-media a {
-            margin-right: 10px;
-            text-decoration: none;
-        }
-
-        body footer .copyright {
-            margin-top: 76px;
-            padding-top: 36px;
-        }
-
-        body footer .copyright p {
-            font-weight: 400 !important;
-            size: 16px !important;
-            color: #ECF1F4;
-        }
-
-        body .cl-light {
-            color: #EEEEEE;
-        }
-
-        body .cl-light-grey-2 {
-            color: #90BCB7;
-        }
-
-        body .font-lora {
-            font-family: 'Lora', sans-serif !important;
+            margin-bottom: 16px;
         }
     </style>
     <div class="container text-md-left">
         <div class="row">
             <div class="col-md-6 mt-md-0 mt-3 address">
-                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
-                    alt="logo" class="img-fluid mb-2">
-                <h5 class="">Work.ly</h5>
-                <p>Jl. Nyi Ageng Serang no 51B <br> Sleman Yogyakarta</p>
-                <div class="mt-md-5 social-media">
+                <div class="logo font-red-hat-display">
+                    GivMoney
+                </div>
+                <div class="social-media">
                     <a href="#">
-                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_linkedin.svg"
-                            alt="linkedin" class="img-fluid">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/bi_linkedin.svg"
+                            alt="linkedin" class="img-fluid mr-4">
                     </a>
                     <a href="#">
-                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_facebook.svg"
-                            alt="facebook" class="img-fluid">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/bi_facebook.svg"
+                            alt="facebook" class="img-fluid mr-4">
                     </a>
                     <a href="#">
-                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_twitter.svg"
-                            alt="twitter" class="img-fluid">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/bi_twitter.svg"
+                            alt="twitter" class="img-fluid mr-4">
                     </a>
                     <a href="#">
-                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_twitch.svg"
-                            alt="twitch" class="img-fluid">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/bi_instagram.svg"
+                            alt="twitch" class="img-fluid mr-4">
                     </a>
+                </div>
+                <div class="copyright font-red-hat-display">
+                    2021 All rights reserved.
                 </div>
             </div>
             <hr class="clearfix w-100 d-md-none pb-3">
             <div class="row col-md-6 nav-footer">
                 <div class="col-md-4 mb-md-0 mb-3">
                     <p>
-                        Our Features
+                        Features
                     </p>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Adaptive</a>
+                            <a href="#!">Payments</a>
                         </li>
                         <li>
-                            <a href="#!">Faster</a>
+                            <a href="#!">Collections</a>
                         </li>
                         <li>
-                            <a href="#!">Integrated</a>
+                            <a href="#!">Conversions</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-md-0 mb-3">
                     <p>
-                        Company
+                        Resources
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Partnerships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <p>
+                        Our Company
                     </p>
                     <ul class="list-unstyled">
                         <li>
                             <a href="#!">About Us</a>
                         </li>
                         <li>
-                            <a href="#!">Blog</a>
+                            <a href="#!">Careers</a>
                         </li>
                         <li>
-                            <a href="#!">Join Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-md-0 mb-3">
-                    <p>
-                        Help
-                    </p>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">API Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#!">System Status</a>
-                        </li>
-                        <li>
-                            <a href="#!">Talk to Support</a>
+                            <a href="#!">News & Media</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright row d-flex justify-content-center border-top mx-0">
-        <p class="my-0">
-            2021 Work.ly | All rights reserved.
-        </p>
     </div>
 </footer> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
